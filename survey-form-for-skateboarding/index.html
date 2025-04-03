@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form for Skateboarding</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Skateboarding Survey Form</h1>
+      <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve statistics for preferred sakteboarding brands and equipment.
+    </p>
+     </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name and Surname</label>
+      <input
+        type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current experiece with skateboards?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="none">No knowledge</option>
+        <option value="beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Kickflippro">Can kickflip just about anything</option>
+        <option value="god">Has the powers to transcend through dimensions on nothing but a skateboard</option>
+      </select>
+    </div>
+    
+    <div class="form-group">
+      <p>Would you recommend Skateboarding to a friend?</p>
+      <label>
+        <input name="user-recommend" value="definitely"  type="radio" class="input-radio" checked/>Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend" value="maybe"  type="radio" class="input-radio"/>Maybe</label>
+
+      <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio"/>Not sure</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite  or recommened brand for skateboards?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="element">Element</option>
+        <option value="darkstar">Darkstar</option>
+        <option value="epitome">Epitome</option>
+        <option value="girl">Girl</option>
+        <option value="zero">Zero</option>
+      </select>
+    </div>
+     <div class="form-group">
+      <p>
+        What is your favorite  or recommened brand for Shoes when skateboarding?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="vans">Vans</option>
+        <option value="dc">DC</option>
+        <option value="nike">Nike</option>
+        <option value="entnies">Etnies</option>
+        <option value="allstar">All Star</option>
+      </select>
+    </div>
+ <div class="form-group">
+      <p>
+        What would you like to learn more about from skateboarding?<br>
+        <span class="clue">(Check all that apply)</span>
+      </p>
+   
+ <label><input name="prefer" value="boardcontrol" type="checkbox" class="input-checkbox"/>Board Control</label>
+      <label><input name="prefer" value="balacing" type="checkbox" class="input-checkbox" />Balancing</label>
+      <label><input name="prefer" value="speed" type="checkbox" class="input-checkbox"/>Speed</label>
+      <label>
+        <input name="prefer" value="manuals"  type="checkbox" class="input-checkbox"/>Manuals</label>
+      <label><input name="prefer" value="flip" type="checkbox" class="input-checkbox"/>Flip Tricks</label>
+      <label>
+        <input name="prefer" value="grab" type="checkbox" class="input-checkbox"/>Grab Tricks</label>
+     
+      <label><input name="prefer" value="videos" type="checkbox"class="input-checkbox"/>Videos</label>
+      <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox"
+        />City Meetups</label
+      >
+      <label>
+   <input name="prefer"value="Photography" type="checkbox" class="input-checkbox"/>Photography</label>
+      <label>
+    <input name="prefer"value="sponsorship" type="checkbox" class="input-checkbox"/>Sponsorship</label>
+    
+    </div>
+      <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Tell us why you love skateboarding.."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
